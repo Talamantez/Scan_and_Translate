@@ -1,6 +1,4 @@
 from PIL import Image
-import os
-from pathlib import Path
 import pytesseract
 import numpy as np
 from translate import Translator
