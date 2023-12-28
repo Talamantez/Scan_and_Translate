@@ -10,8 +10,8 @@ target_lang = 'en'
 translator = Translator(to_lang=target_lang, from_lang=source_lang)
 # get currently supported Tesseract OCR languages
 # print(pytesseract.get_languages())
-# filename = 'C:/Users/rober/Documents/Personal Projects/OCR/Russian_Revolution/test_image.png'
-filename = 'C:/Users/rober/Documents/Personal Projects/OCR/Russian_Revolution/test_image_2.png'
+filename = 'C:/Users/rober/Documents/Personal Projects/OCR/Russian_Revolution/test_image.png'
+# filename = 'C:/Users/rober/Documents/Personal Projects/OCR/Russian_Revolution/test_image_2.png'
 # filename = 'C:/Users/rober/Documents/Personal Projects/OCR/Russian_Revolution/october.png'
 # filename = 'C:/Users/rober/Documents/Personal Projects/OCR/Russian_Revolution/march_17_russian_revolution_crop3.png'
 
@@ -27,7 +27,9 @@ print("Character Count: ")
 print(len(text))
 
 # Truncating
-limit = 10
+limit = 12
+print('limiting character length to translate to ')
+print(limit)
 truncated_text = text[:limit] + '...' if len(text) > limit else text
 
 print("OCR Latin: ")
