@@ -1,4 +1,4 @@
-This script reads an image's Russian text and translates it to English.
+This script reads an image's text and translates it into another language
 -----------------------------------------
 Run with:  
 
@@ -9,7 +9,7 @@ Example Output:
 OCR Russian:
 ИЗБИРАТЕЛЬ:
 
-Translated English
+Translated English:
 voter
 
 --------------------------------------------
