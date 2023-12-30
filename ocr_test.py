@@ -40,7 +40,7 @@ translator = Translator(to_lang=target_lang, from_lang=source_lang)
 # get currently supported Tesseract OCR languages
 # print(pytesseract.get_languages())
 
-root = 'C:/Users/rober/Documents/Personal Projects/OCR/Scan_and_Translate/'
+root = '/your_path/' 
 # filename = root + 'latin_uxorem.png'
 # filename = root + 'Screenshot_20231229_130556_Instagram.jpg'
 # filename = root + 'greek_1.png'
