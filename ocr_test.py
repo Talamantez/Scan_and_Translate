@@ -53,10 +53,6 @@ img1 = np.array(Image.open(filename))
 # extract the text
 text = pytesseract.image_to_string(img1, lang=source_lang)
 
-# Translator character count max is 500
-print("Character Count: ")
-print(len(text))
-
 # Print OCR text
 print("\nOCR " + source_lang.capitalize() + ":")
 print(text)
