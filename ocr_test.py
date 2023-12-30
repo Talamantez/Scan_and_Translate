@@ -24,7 +24,7 @@ def translateText(text):
 
         translated_word = translateWord(myWord)
 
-        # print(translated_word)
+        # add the word to the output text
         translated_text.append(translated_word)
     separator = " "
     return separator.join(translated_text)
