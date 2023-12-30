@@ -16,6 +16,7 @@ def translateWord(word):
 
 def translateText(text):
     translated_text = []
+    
     # Split into words
     wordArray = text.split()
     for word in wordArray:
