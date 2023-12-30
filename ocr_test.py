@@ -30,8 +30,7 @@ def translateText(text):
         
     # reconstruct the text    
     separator = " "
-    return separator.join(translated_text)
-        
+    return separator.join(translated_text)  
 
 # latin = 'lat', russian = 'rus', english = 'en', ukranian = 'ukr'
 source_lang = 'rus'
