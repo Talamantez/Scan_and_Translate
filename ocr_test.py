@@ -25,7 +25,7 @@ def translateText(text):
     # Split into words
     word_array = text.split()
 
-    for word in tqdm(word_array):
+    for word in tqdm(word_array, "Translating..."):
         
         myWord = word.split(sep=",")[0]
 
@@ -89,13 +89,13 @@ img1 = np.array(Image.open(filename))
 text = pytesseract.image_to_string(img1, lang=source_lang)
 
 # Print OCR text
-# print("\nOCR " + source_lang.capitalize() + ":")
-# print(text)
+print("\nOCR " + source_lang.capitalize() + ":")
+print(text)
 
 # Print Translated text
 # print("Translated " + target_lang.capitalize() + ":")
 translated_text = translateText(text)
-# print(translated_text + "\n")
+print(translated_text + "\n")
 
 # Print text again highlighting word translation successes and failures
 # Based on index 
