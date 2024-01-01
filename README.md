@@ -6,12 +6,10 @@
 
 ## Input
 -------------------------------------------------
+Hebrew Bible with David Kimhi's Sefer Mikhlol ('Kennicott Bible'), 1476
 ![Kennicott Bible Excerpt](image.png)
 
 <p><strong>Source:</strong> https://digital.bodleian.ox.ac.uk/objects/8c264b23-f6cc-4f18-98cf-9d75f7175b54/surfaces/af9aa4ac-8c92-46f0-90bf-774d2b56d160/#</p>
-------------------------------------------
-
-Hebrew Bible with David Kimhi's Sefer Mikhlol ('Kennicott Bible'), 1476
 
 Output
 ------------------------------------------
