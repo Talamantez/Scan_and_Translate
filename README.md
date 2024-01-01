@@ -1,5 +1,8 @@
 This script reads an image's text and translates it into another language
 -----------------------------------------
+
+
+
 Run with:  
 
 python ./ocr_test.py
