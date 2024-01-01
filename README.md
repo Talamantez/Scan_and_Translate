@@ -11,21 +11,8 @@
 <p><strong>Source:</strong> https://digital.bodleian.ox.ac.uk/objects/8c264b23-f6cc-4f18-98cf-9d75f7175b54/surfaces/af9aa4ac-8c92-46f0-90bf-774d2b56d160/#</p>
 ------------------------------------------
 
-Hebrew Bible with David Kimhi's Sefer Mikhlol ('Kennicott Bible')
-Shelfmark:
-Bodleian Library MS. Kennicott 1
-Holding Institution:
-Bodleian Libraries, University of Oxford
-Catalogue Description:
-Hebrew and Judaica Manuscripts at the Bodleian Libraries, Oxford University
-Date Statement:
-1476
-Place of Origin:
-La Coruña
-Language:
-Hebrew
-Catalogue Identifier:
-Neubauer 2322
+Hebrew Bible with David Kimhi's Sefer Mikhlol ('Kennicott Bible'), 1476
+
 Output
 ------------------------------------------
 ![Kennikcott_bible_fol_439r.PNG](example_output_Bodleian_Kennicott_bible_fol_439r.PNG)
