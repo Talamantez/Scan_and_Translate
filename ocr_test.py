@@ -3,7 +3,9 @@ import pytesseract
 import numpy as np
 from translate import Translator
 from colorama import Fore
-
+from tqdm import tqdm
+from time import sleep
+ 
 # Read your target path from 'my_path.txt'
 my_path = open("my_path.txt").read()
 
@@ -23,7 +25,8 @@ def translateText(text):
     
     # Split into words
     word_array = text.split()
-    for word in word_array:
+
+    for word in tqdm(word_array):
         
         myWord = word.split(sep=",")[0]
 
@@ -37,15 +40,13 @@ def translateText(text):
     return separator.join(translated_text)  
 
 def compare(text, translated_text):
-    # see if the index in 'translated_text' is equal to a failure indicator (using a "-")
-    # if so, print red , if not print green
     
     # Split into words
     word_array = text.split()
     translated_word_array = translated_text.split()
 
     # Print OCR words highlighting translation successes
-    print(Fore.LIGHTCYAN_EX, "\nOCR " + source_lang.capitalize() + ":")
+    print(Fore.LIGHTCYAN_EX, "OCR " + source_lang.capitalize() + ":\n")
     for word in word_array:
         if word_array.index(word) <= len(translated_word_array):
         
@@ -54,15 +55,17 @@ def compare(text, translated_text):
             else:
                 print(Fore.GREEN, word, end='')
 
+    print("\n")
     # Print Translated words highlighting translation successes
-    print(Fore.LIGHTCYAN_EX, "\nOCR " + target_lang.capitalize() + ":")
+    print(Fore.LIGHTCYAN_EX, "Translated " + target_lang.capitalize() + ":\n")
     for translated_word in translated_word_array:
         if translated_word == '-':
             print(Fore.RED, translated_word, end='')
         else:
             print(Fore.GREEN, translated_word, end='')
-
-    print(Fore.WHITE, "\nEND")
+    print("\n")
+    print(Fore.WHITE, "END\n")
+    
 # latin = 'lat', russian = 'rus', english = 'en', ukranian = 'ukr', greek = 'grc'
 source_lang = 'grc'
 target_lang = 'en'
@@ -78,7 +81,7 @@ root =  my_path
 # filename = root + 'Screenshot_20231229_130556_Instagram.jpg'
 # filename = root + 'greek_3.png'
 # filename = root + 'october.png'
-filename = root + 'greek_3.PNG'
+filename = root + 'greek_1.PNG'
 
 # open the file
 img1 = np.array(Image.open(filename))
