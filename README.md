@@ -1,21 +1,20 @@
-This script reads an image's text and translates it into another language
------------------------------------------
+# Translate text from an image and translate it into another language
+--------------------------------
 
+<p>Run with:</p> 
+<code>python ./ocr_test.py</code>
 
+## Input
+-------------------------------------------------
+![Kennicott Bible Excerpt](image.png)
 
-Run with:  
-
-python ./ocr_test.py
+<p><strong>Source:</strong> https://digital.bodleian.ox.ac.uk/objects/8c264b23-f6cc-4f18-98cf-9d75f7175b54/surfaces/af9aa4ac-8c92-46f0-90bf-774d2b56d160/#</p>
 ------------------------------------------
-Example Output: 
 
-OCR Russian:
-ИЗБИРАТЕЛЬ:
-
-Translated English:
-voter
-
---------------------------------------------
+Output
+------------------------------------------
+![Kennikcott_bible_fol_439r.PNG](example_output_Bodleian_Kennicott_bible_fol_439r.PNG)
+--
 
 OCR is performed with pytesseract:
 Project description from pypi.org:
