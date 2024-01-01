@@ -4,7 +4,6 @@ import numpy as np
 from translate import Translator
 from colorama import Fore
 from tqdm import tqdm
-from time import sleep
  
 # Read your target path from 'my_path.txt'
 my_path = open("my_path.txt").read()
