@@ -1,4 +1,4 @@
-# Scan text in an image using OCR and translate it into another language
+# Read text from an image and translate it into another language
 --------------------------------
 
 <p>Run with:</p> 
