@@ -83,7 +83,7 @@ root =  my_path
 # filename = root + 'greek_1.PNG'
 # filename = root + 'latin_1_utopia.png'
 # filename = root + 'Russian_Protest_snip_20240101_041809_PBS_Civilizations_Ep9.jpg'
-filename = root + 'Bodleian_Kennicott_bible_fol_447r.PNG'
+filename = root + 'Bodleian_Kennicott_bible_fol_439r.PNG'
 
 # open the file
 img1 = np.array(Image.open(filename))
