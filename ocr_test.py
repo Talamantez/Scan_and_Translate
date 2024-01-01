@@ -25,7 +25,7 @@ def translateText(text):
     # Split into words
     word_array = text.split()
 
-    for word in tqdm(word_array, "Translating..."):
+    for word in tqdm(word_array, "Translating"):
         
         myWord = word.split(sep=",")[0]
 
@@ -47,7 +47,7 @@ def compare(text, translated_text):
     # Print OCR words highlighting translation successes
     print(Fore.LIGHTCYAN_EX, "OCR " + source_lang.capitalize() + ":\n")
     for word in word_array:
-        if word_array.index(word) <= len(translated_word_array):
+        if word_array.index(word) < len(translated_word_array):
         
             if translated_word_array[word_array.index(word)] == '-':
                 print(Fore.RED, word, end='')
@@ -65,8 +65,8 @@ def compare(text, translated_text):
     print("\n")
     print(Fore.WHITE, "END\n")
     
-# latin = 'lat', russian = 'rus', english = 'en', ukranian = 'ukr', greek = 'grc'
-source_lang = 'grc'
+# latin = 'lat', russian = 'rus', english = 'en', ukranian = 'ukr', greek = 'grc', hebrew = 'heb'
+source_lang = 'heb'
 target_lang = 'en'
 
 # initialize translator
@@ -80,7 +80,10 @@ root =  my_path
 # filename = root + 'Screenshot_20231229_130556_Instagram.jpg'
 # filename = root + 'greek_3.png'
 # filename = root + 'october.png'
-filename = root + 'greek_1.PNG'
+# filename = root + 'greek_1.PNG'
+# filename = root + 'latin_1_utopia.png'
+# filename = root + 'Russian_Protest_snip_20240101_041809_PBS_Civilizations_Ep9.jpg'
+filename = root + 'Bodleian_Kennicott_bible_fol_447r.PNG'
 
 # open the file
 img1 = np.array(Image.open(filename))
